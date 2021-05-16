@@ -1,0 +1,76 @@
+body{
+    background: #fce373;
+    font-family: sans-serif;
+}
+
+/* Icono Close Alejandro*/
+
+.close{
+    margin: 0;
+}
+
+.close .iconclose img{
+    width: 50px;
+    margin-left: 1200px;
+    position: fixed;
+    top: 22px;
+    right: 32px;
+}
+
+/* Icono Close Alejandro*/
+
+
+/* Contenido Cines Lugar Alejandro*/
+
+h1{
+    padding: 5rem 27rem;
+    max-width: 1200px;
+    text-decoration: underline;
+}
+
+.plaza{
+    padding: 5rem 25rem;
+    max-width: 1200px;
+    text-decoration: underline;
+}
+
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #fce373;
+    margin: 0 auto;
+    width: 85%;
+    max-width: 950px; 
+    margin-right: 50px;   
+}
+
+.texto{
+    margin-top: 70px;
+}
+
+.mapa{
+    margin: auto;
+    margin-left: 70px;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td, .table th{
+    padding: 12px 15px;
+    border: 1px solid black;
+}
+
+.table th{
+    background-color: #dc040c;
+    color: white;
+}
+
+.table tbody tr:nth-child(even){
+    background-color: #Eb9b33;
+}
+
+
+/* Contenido Cines Lugar Alejandro*/
