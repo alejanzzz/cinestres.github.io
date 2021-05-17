@@ -1,0 +1,143 @@
+body
+{
+    background: #427fab
+}
+
+
+/* Cabecera Alejandro*/
+
+.container{
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header{
+    background: #dc040c;
+    color: white;
+    padding: 0.5rem;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+    align-items: center;
+}
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li{
+    display: inline-block;
+}
+
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 3.5rem;
+    margin-left: 50px;
+    transition: all 0.4s linear;
+    border-radius: 15px;
+    border: 3px dotted;
+}
+
+.navigation ul li a:hover{
+    background: #f69819;
+}
+
+.login{
+    display: block;
+    padding: 0.5rem 3rem;
+    margin-right: 24px;
+    transition: all 0.2s linear;
+    border-radius: 15px;
+    border: 8px double #ffd400;
+}
+
+.login:hover{
+    background: #f69819;
+}
+
+.logo{
+    margin-left: 55px;
+}
+
+.logito{
+    width: 100px;
+}
+
+/* Cabecera Alejandro*/
+
+
+caption{
+    margin-top: 120px;
+}
+strong{
+    font-size: 150%;
+}
+.sinopsis{
+    font-size: 150%;
+}
+select{
+    padding: 5px 10px;
+    height:42px;
+    margin:10px 25px 10px 25px;
+    min-width: 225px;
+    -webkit-appearance: none;
+    height: 34px;
+    height:40px;
+    width:150px;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1500%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%150%150%150-13-5.4H18.4c-5%150-9.3%201.8-12.9%205.4A17.6%2017.6%150%150%150%150%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%150-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+        linear-gradient(to bottom, #ffffff 0%,#f7f7f7 100%);
+      background-repeat: no-repeat, repeat;
+      background-position: right .7em top 50%, 0 0;
+      background-size: .65em auto, 100%;}
+input{
+    height:40px;
+    width:150px;
+  margin-left: 60px;
+}
+.nn{
+    margin-right: 30px;
+    width: 50px;
+}
+h1{
+    text-decoration:underline;
+}
+.ubicacion{
+    margin-bottom: 100px;
+    margin-left:400px ;
+    margin-right:350px ;
+    font-size: 150%;
+}
+.ubicacion div{
+    font-size: 100%;
+   font-weight: 800;
+}
+.buybolet{
+    background: #ff2900;
+    font-size:230%;
+    margin-top:-180px;
+    margin-bottom: 100px;
+    margin-left:850px ;
+    margin-right:80px ;
+}
+.buybolet>a{
+    text-decoration:none;
+    color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
