@@ -1,0 +1,146 @@
+body
+{
+    background: #2596be;
+    margin: 25px 50px;
+    max-width: 1050px;
+    width: 100%;
+
+}
+
+/* Cabecera Alejandro*/
+
+.container{
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header{
+    background: #dc040c;
+    color: white;
+    padding: 0.5rem;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+    align-items: center;
+}
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li{
+    display: inline-block;
+}
+
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 3.5rem;
+    margin-left: 50px;
+    transition: all 0.4s linear;
+    border-radius: 15px;
+    border: 3px dotted;
+}
+
+.navigation ul li a:hover{
+    background: #f69819;
+}
+
+.login{
+    display: block;
+    padding: 0.5rem 3rem;
+    margin-right: 24px;
+    transition: all 0.2s linear;
+    border-radius: 15px;
+    border: 8px double #ffd400;
+}
+
+.login:hover{
+    background: #f69819;
+}
+
+.logo{
+    margin-left: 55px;
+}
+
+.logito{
+    width: 100px;
+}
+
+/* Cabecera Alejandro*/
+
+
+
+/* Butacas Alejandro */
+
+
+.Cardbox{
+    perspective: 500px;
+    margin: 15px;
+}
+
+.card{
+    position: relative;
+    width: 451px;
+    height: 288px;
+    
+    transform-style: preserve-3d;
+    transition: .5s ease;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, .5);
+}
+
+.card-front, .card-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 451px;
+    height: 288px;
+    backface-visibility: hidden;
+}
+
+.card-front{
+    display: flex;
+
+}
+
+.card-back{
+    display: flex;
+}
+
+.Cardbox:hover .card{
+    transform: rotateY(180deg);
+    transition-delay: .2s;
+}
+
+.card-back{
+    transform: rotateY(180deg);
+}
+
+.disponible{
+    display: flex;
+    margin: 25px 90px;
+
+}
+
+.descripcion{
+    display: block;
+    margin: 50px 150px;
+}
+
+/* Butacas Alejandro */
