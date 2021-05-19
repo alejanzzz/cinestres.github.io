@@ -145,10 +145,10 @@ body{
     color: #639e6a;
 }
 
-.vermás{
-    margin: 0 auto  ;
+.vermás .boton{
+    display: block;
+    margin: 0 auto;
     margin-top: 50px;
-    margin-left: 570px;
     transition: all 0.2s linear;
 }
 
@@ -162,6 +162,10 @@ body{
 .boton:hover{
     background: #dc040c;
     color: white;
+}
+
+#mas{
+    text-decoration: none;
 }
 
 /* CSS de Cartelera y Próximos Estrenos Alejandro*/
