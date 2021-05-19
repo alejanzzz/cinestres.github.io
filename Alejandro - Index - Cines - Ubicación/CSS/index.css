@@ -146,17 +146,22 @@ body{
 }
 
 .vermás{
+    margin: 0 auto  ;
     margin-top: 50px;
-    margin-left: 600px;
+    margin-left: 570px;
     transition: all 0.2s linear;
 }
 
-.vermás a{
-    color: black;
+.boton{
+    background-color: #fce373;
+    border: 2px dotted;
+    border-radius: 15px 15px;
+    padding: 10px 30px;
 }
 
-.vermás a:hover{
-    color: #df55af;
+.boton:hover{
+    background: #dc040c;
+    color: white;
 }
 
 /* CSS de Cartelera y Próximos Estrenos Alejandro*/
