@@ -30,7 +30,7 @@ body
     align-items: center;
 }
 
-.logo-nav-container{
+.separation{
     display: flex;
     justify-content: space-between;
     align-items: center;

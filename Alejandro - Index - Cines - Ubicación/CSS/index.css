@@ -44,7 +44,7 @@ body{
     align-items: center;
 }
 
-.logo-nav-container{
+.separation{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -155,7 +155,7 @@ body{
     color: #639e6a;
 }
 
-.vermás .boton{
+.vermas .boton{
     display: block;
     margin: 0 auto;
     margin-top: 50px;

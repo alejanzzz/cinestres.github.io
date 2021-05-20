@@ -43,7 +43,7 @@ body{
     align-items: center;
 }
 
-.logo-nav-container{
+.separation{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -152,20 +152,6 @@ body{
     font-weight: 500;
     text-decoration: none;
     color: #3498db;
-}
-
-.vermás{
-    margin-top: 50px;
-    margin-left: 600px;
-    transition: all 0.2s linear;
-}
-
-.vermás a{
-    color: black;
-}
-
-.vermás a:hover{
-    color: #df55af;
 }
 
 /* CSS de Cartelera y Alejandro*/
