@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #fbe374;
+    background-image: url(./images/wall.png);
+    background-position: center;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    background: #639e6a;
+    padding: 40px;
+    border-radius: 10px;
+    -webkit-box-shadow: 19px 25px 14px 3px rgba(0,0,0,0.37);
+    -moz-box-shadow: 19px 25px 14px 3px rgba(0,0,0,0.37);
+    box-shadow: 19px 25px 14px 3px rgba(0,0,0,0.37);
+    
+}
+   
+.login h2{
+    color: #fff;
+    margin-bottom: 55px;
+}
+   
+.login button i{
+    position: absolute;
+    top: 12px; 
+    left: 12px;
+}
+   
+.login button{
+    width: 100%;
+    margin: 15px 0px;
+    padding: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+    position: relative;
+    box-shadow: 10px 10px 20px 5px #194d33;
+}
+   
+.login .fb{
+    background: #3b5999;
+    color: #fff;
+    border-radius: 5px;
+}
+   
+.login .go{
+    background: #f45c5c;
+    color: #fff;
+    border-radius: 5px;
+}
+.login .invitado{
+    background: black;
+    color: #fff;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 540px){
+.container{
+    display: block;
+}
+}
