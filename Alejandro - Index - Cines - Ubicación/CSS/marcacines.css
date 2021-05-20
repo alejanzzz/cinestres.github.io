@@ -85,11 +85,11 @@ a{
 .contenedor_tarjeta{
     margin: 20px;
     padding: 10px;
-    display: inline-block;
+    display: block;
 }
 
 .contenedor_tarjeta a{
-    display: inline-block;
+    display: block;
 }
 
 .contenedor_tarjeta:hover figure{
@@ -97,6 +97,7 @@ a{
     -ms-transform: perspective(600px) rotateY(180deg);
     -o-transform: perspective(600px) rotateY(180deg);
     transform: perspective(600px) rotateY(180deg);
+    box-shadow: 19px 25px 14px 3px rgba(0,0,0,0.37);
 }
 
 .contenedor_tarjeta:hover figure img{
@@ -111,6 +112,7 @@ figure{
     transition: all ease .5s;
     transform-style: preserve-3d;
     transform: perspective(600px) rotateY(0deg);
+    box-shadow: 19px 25px 14px 3px rgba(0,0,0,0.37);
 }
 
 figure .frontal,
