@@ -156,3 +156,76 @@ body{
 }
 
 /* CSS de Cartelera y Alejandro*/
+
+/*Pie de página Alejandro*/
+
+footer{
+    
+    background: #dc040c;
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    margin-top: 25px;
+    padding-top: 2px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 12px;
+    font-size: 14px;
+}
+.redessociales{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 2rem 0;
+}
+.redessociales li{
+    margin: 0 10px;
+}
+.redessociales a{
+    text-decoration: none;
+    color: #fff;
+}
+.redessociales a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.redessociales a:hover i{
+    color: darkblue;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 3px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: lowercase;
+    opacity: .4;
+    font-weight: 100;
+}
+
+/*Pie de página Alejandro*/
