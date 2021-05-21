@@ -1,11 +1,8 @@
 body
 {
-    background: #2596be;
-    margin: 25px 50px;
-    max-width: 1050px;
-    width: 100%;
-
+    background: #2596be
 }
+
 
 /* Cabecera Alejandro*/
 
@@ -83,64 +80,44 @@ body
     width: 100px;
 }
 
-/* Cabecera Alejandro*/
-
-
-
-/* Butacas Alejandro */
-
-
-.Cardbox{
-    perspective: 500px;
-    margin: 15px;
+.container{
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-.card{
-    position: relative;
-    width: 451px;
-    height: 288px;
+input{
+    padding: 2px 10px;
+    margin: 15px  20px;
     
-    transform-style: preserve-3d;
-    transition: .5s ease;
-    box-shadow: 0 30px 30px rgba(0, 0, 0, .5);
+   
 }
 
-.card-front, .card-back{
+input:valid ~ span:after {
+    content: '✓';
+    padding-left: 10x;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 451px;
-    height: 288px;
-    backface-visibility: hidden;
-}
-
-.card-front{
-    display: flex;
+    margin: 15px;
 
 }
+select{
+    padding: 5px 10px;
+    margin:10px 25px ;
+    min-width: 150px;
+    width: 20px;
+    height: 30px;
+    background: #ffffff;
+    border: 2px;
+    font-size: 10pt;
+    float: left;
+    color: #000000;}
 
-.card-back{
-    display: flex;
-}
+input#imprimir{
+    padding: 2px;
+    margin:  20px;
+    }
 
-.Cardbox:hover .card{
-    transform: rotateY(180deg);
-    transition-delay: .2s;
-}
 
-.card-back{
-    transform: rotateY(180deg);
-}
-
-.disponible{
-    display: flex;
-    margin: 25px 90px;
-
-}
-
-.descripcion{
-    display: block;
-    margin: 50px 150px;
-}
-
-/* Butacas Alejandro */
+.QR 
+{ padding: 2px; margin: 80px; border: 2px solid black; float: right; width: 300px; }

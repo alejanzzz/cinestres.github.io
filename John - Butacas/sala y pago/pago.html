@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Realiza tu Pago</title>
+    <link rel="stylesheet" href="../sala y pago/pago.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!--Cabecera Alejandro-->
+    <header class="header">
+        <div class="container separation">
+            <div class="logo">
+                <img class="logito" src="../../Alejandro - Index - Cines - Ubicación/images/logo.png">
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a
+                            href="../../Alejandro - Index - Cines - Ubicación/Nuestros Cines/nuestroscines.html">Cines</a>
+                    </li>
+                    <li><a href="../../Kevin - Categorías/categorias.html">Categorías</a></li>
+                </ul>
+            </nav>
+            <a class="login" href="../../Alejandro - Index - Cines - Ubicación/Login/login.html">Regístrate</a>
+        </div>
+    </header>
+
+    <!--Cabecera Alejandro-->
+    <br><br><br><br><br>
+    <center>
+        <h1 class="title">Realiza tu Pago</h1>
+    </center>
+    <table>
+        <h3 class="title">Escoge tu Metodo de Pago</h3>
+        <tr>
+            <td>
+                <div class="container1">
+
+                    <input type="radio" name="Metodos de Pago"><img src="../sala y pago/imagenes/visa.png" alt="visa"height="35" width="50">
+                    <input type="radio" name="Metodos de Pago"><img src="../sala y pago/imagenes/mastercard.png"alt="mastercard" height="35" width="50">
+                    <input type="radio" name="Metodos de Pago"><img src="../sala y pago/imagenes/plin.png" alt="plin"height="#" width="35">
+                    <input type="radio" name="Metodos de Pago"><img src="../sala y pago/imagenes/yape.png" alt="yape"height="#" width="35">
+                </div>
+            </td>
+                          
+        </tr>
+        <td>
+            <form>
+                <div>
+                  <input type="NUMERO DE TARJETA" id="TARJETA" name="NUERO DE TARJETA"
+                  placeholder="XXXX XXXX XXXX 0987" size="50" minlength="16" maxlength="16" required><span class="validity">                  
+                </div>
+                <div><input type="MM/AA" id="FECHA DE VENCIMIENTO" name="MM/AA"
+                  placeholder="07/18" size= "3" minlength="4" maxlength="5"required><span class="validity"></span>
+                    <input type="CVV" id="codigo" name="CVV"
+                    placeholder= "CVV" minlength="3" maxlength="3" size="4" required><span class="validity"><img class="CVV" src="../sala y pago/imagenes/tarjeta CVV.png" alt="CVV" style="max-width:10%">
+                  </div>
+                  <div>
+                    <div><input type="Nombres" id="Nombre del Dueño" name="Nombre"
+                        placeholder="Nombres" size= "20">
+                  </div>
+              </form>
+              <u><h3 class="title">Datos Para el Comprobante</h3></u>
+        
+              <strong><font COLOR="red"><u><p size="2">Datos de Pago</p></font></u></strong>
+            <div>
+              <select name="IDENTIFICICACION" id="DNI">
+              <option value="DNI">DNI</option>
+              <option value="PASAPORTE">PASAPORTE</option>
+            <option value="CARNE DE EXTRANJERIA">CARNE DE EXTRANJERIA</option></select> 
+            <input type="DNI" id="IDENTIFICICACION" name="DNI"
+                  placeholder="Num. de Doc." size= "8" required><span class="validity"></span>
+            </div>
+            <div>
+            <input type="Nombre" id="Nombre completo" name="Nombres"
+                  placeholder="Nombre completo" size= "15" required>
+            <input type="Apellidos" id="Apellidos" name="Apellidos"
+                  placeholder="Apellidos" size= "20" required>   
+              </div>
+              <input type="Correo" id="correo" name="correo"
+                  placeholder="Correo electrónico" size= "35" required>
+            </td>
+            
+    </table>
+    <div align="right"><a href="./Gracias por la Compra.html"><input type="submit" value="Comprar"></a></div>
+</body>
+
+</html>
