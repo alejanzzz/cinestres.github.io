@@ -43,7 +43,7 @@
             <th>
             <td>
                 <strong>Sinopsis</strong>
-                <p class="sinopsis">Evangelion: 3.0+1.0 Tres Veces Una Vez en Hispanoamérica) una película japonesa
+                <p class="sinopsis" id="_sinopsis">Evangelion: 3.0+1.0 Tres Veces Una Vez en Hispanoamérica) una película japonesa
                     animada de ciencia
                     ficción de 2021 escrita y codirigida por Hideaki Anno y producida por Studio Khara. Es la cuarta y
                     última película de la serie Rebuild of Evangelion, basada en la serie de anime Neon Genesis
@@ -55,10 +55,10 @@
         <div>
             <div class="box">
                 <div class="container-1">
-                    <input type="search" id="search" placeholder="Buscar Cines" />
+                    <input type="search" id="search" placeholder="Buscar Cines">
                 </div>
             </div>
-            <select name="ciudad" id="ciudad">
+            <select name="ciudad" id="ciudad" onchange="selection();">
                 <option value="">Ciudad</option>
                 <option value="Amazonas">Amazonas</option>
                 <option value="Ancash">Ancash</option>
@@ -74,7 +74,7 @@
                 <option value="La Libertad">La Libertad</option>
                 <option value="Lambayeque">Lambayeque</option>
                 <option value="Lima">Lima</option>
-                <option value="loreto">loreto</option>
+                <option value="Loreto">Loreto</option>
                 <option value="Madre de Dios">Madre de Dios</option>
                 <option value="Moquegua">Moquegua</option>
                 <option value="Pasco">Pasco</option>
@@ -85,33 +85,36 @@
                 <option value="Tumbes">Tumbes</option>
                 <option value="Ucayali">Ucayali</option>
             </select>
-            <select name="fecha" id="fecha">
-                <option value="mayo">Fecha</option>
-                <option value="mayo">1/05/21</option>
-                <option value="mayo">5/05/21</option>
-                <option value="mayo">7/05/21</option>
-                <option value="mayo">13/05/21</option>
-                <option value="mayo">17/05/21</option>
-                <option value="mayo">21/05/21</option>
+            <select name="fecha" id="fecha" onchange="selection1();">
+                <option value="">Fecha</option>
+                <option value="Lunes">1/05/21</option>
+                <option value="Martes">2/05/21</option>
+                <option value="Miercoles">3/05/21</option>
+                <option value="Jueves">4/05/21</option>
+                <option value="Viernes">5/05/21</option>
+                <option value="Sabado">6/05/21</option>
+                <option value="Domingo">6/05/21</option>
             </select>
-            <select class="nn" name="hora" id="hora">
-                <option value="am">10:00a.m</option>
-                <option value="pm">1:00p.m</option>
-                <option value="pm">3:00p.m</option>
-                <option value="pm">5:00pm</option>
-                <option value="pm">7:00p.m</option>
-                <option value="pm">10:00p.m</option>
+            <select class="nn" name="hora" id="hora" onchange="selection2();">
+                <option value="mañana">10:00a.m</option>
+                <option value="tarde">1:00p.m</option>
+                <option value="tarde">3:00p.m</option>
+                <option value="tarde">5:00pm</option>
+                <option value="noche">7:00p.m</option>
+                <option value="noche">10:00p.m</option>
             </select>
             </form>
             <br><br><br>
             <div>
                 <p><center>
                     <font size="5">*CINEMARK Av. Alfredo Mendiola 3698 (Centro Comercial Mega Plaza)</font>
-                    <a href= "../../John - Butacas/sala y pago/evangelion.html"><input type="button" value="Comprar"></a></center>
+                    <a href= "../../John - Butacas/sala y pago/evangelion.html"><input type="button" value="Comprar" id="_comprar" onclick="return enviarme();" ></a></center>
                 </p>
             </div>
-
+            <p id="rsp"></p>
+        </div>
     </main>
+        <script src="/Kevin - Categorías/js/peliculas.js"></script>
 </body>
 
 </html>
