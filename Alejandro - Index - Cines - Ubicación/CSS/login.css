@@ -23,15 +23,22 @@ body{
     background: #639e6a;
     padding: 40px;
     border-radius: 10px;
-    -webkit-box-shadow: 19px 25px 14px 3px rgba(0,0,0,0.37);
-    -moz-box-shadow: 19px 25px 14px 3px rgba(0,0,0,0.37);
-    box-shadow: 19px 25px 14px 3px rgba(0,0,0,0.37);
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    color: #fff;
+    padding-top: 60px;
 }
    
 .login h2{
-    color: #fff;
+    color: #648978;
     margin-bottom: 55px;
+    font-size: 50px;
+    font-family: 'Times New Roman';
+    text-decoration: underline;
+    line-height: 1em;
 }
    
 .login button i{
@@ -64,6 +71,13 @@ body{
 .login .invitado{
     background: black;
     color: #fff;
+    border-radius: 5px;
+}
+
+.login .cuenta{
+    font-family:'Roboto', sans-serif;
+    background: #fff;
+    color: black;
     border-radius: 5px;
 }
 
