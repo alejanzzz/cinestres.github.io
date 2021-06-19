@@ -68,7 +68,7 @@ form .grupo{
 }
 
 input{
-    background: none;
+    background: black;
     color: #fff;
     font-size: 18px;
     padding: 10px 10px 10px 5px;
@@ -82,7 +82,11 @@ input{
 
 input:focus{ 
     outline: none;
-    color: red;
+    color: #648978;
+    text-shadow: rgba(0,0,0,0.1) -1px 0, rgba(0,0,0,0.1) 0 -1px,
+   rgba(255,255,255,0.1) 1px 0, rgba(255,255,255,0.1) 0 1px,
+   rgba(0,0,0,0.1) -1px -1px, rgba(255,255,255,0.1) 1px 1px;
+   color: gold;
 }
 
 label{

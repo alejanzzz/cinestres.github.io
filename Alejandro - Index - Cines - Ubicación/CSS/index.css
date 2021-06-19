@@ -31,11 +31,6 @@ body{
     background: #dc040c;
     color: white;
     padding: 0.5rem;
-
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
 }
 
 .header a{
@@ -99,25 +94,59 @@ body{
 /* CSS de Cartelera y Próximos Estrenos Alejandro*/
 
 .title{
-    font-size: 40px;
     color: black;
-    margin-left: 20px;
-    font-weight: 60;
-    padding-top: 5rem;
+    text-align: center;
+    font-weight: 18rem;
+    padding-top: 2rem;
+}
+h2, a{
+    margin: 0;
+    padding: 0;
 }
 
-.container1{
+a{
+    text-decoration: none;
+}
+
+.Carousel{
     width: 100%;
-    max-width: 1250px;
+}
+
+.Carousel1{
+    width: 100%;
+}
+
+.Carousel h2{
+    font-size: 26px;
+    line-height: 38px;
+    padding-bottom: 24px;
+    opacity: .9;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.slick-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
     height: 430px;
+    padding: 30px 30px 20px 30px;
+    margin: 0;
+    max-width: 94vw;
+    overflow: hidden;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
-    margin: auto;
-    padding-top: 0;
+    transition: .5s ease-in-out;
 }
-
-.container1 .card{
-    width: 700px;
+.slick div{
+    width: 223px;
     height: 430px;
     overflow: hidden;
     margin: 10px;
@@ -127,38 +156,64 @@ body{
     border-radius: 8px;
 }
 
-.descripción{
+.slick div:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+div .descripción{
     margin: auto;
     border: 1px;
 }
 
-.container1 .card:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
 
-.container1 .card img{
+.slick div img{
     margin: auto;
     width: 230px;
     height: 330px;
 }
 
-.container1 .card h4{
+.slick div h4{
     font-weight: 600;
     color: black;
     margin: 0.5rem;
 }
 
-.container1 .card a{
+.slick div a{
     font-weight: 500;
     text-decoration: none;
     color: #639e6a;
 }
 
+.slick-arrow{
+    border-radius: 30px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    border: 0;
+    cursor: pointer;
+}
+.slick-arrow:focus{
+    outline: 0;
+}
+.slick-arrow svg{
+    width: 12px;
+    height: 100%;
+    color: rgba(0,0,0,.7);
+}
+.slick-prev{
+    left: 10px;
+}
+.slick-next{
+    right: 0px;
+}
+
 .vermas .boton{
     display: block;
-    margin: 0 auto;
-    margin-top: 50px;
+    margin: 60px auto;
     transition: all 0.2s linear;
 }
 
@@ -177,6 +232,7 @@ body{
 #mas{
     text-decoration: none;
 }
+
 
 /* CSS de Cartelera y Próximos Estrenos Alejandro*/
 
