@@ -119,6 +119,7 @@ body{
     width: 700px;
     height: 430px;
     overflow: hidden;
+    background-color: #043e5a;
     margin: 10px;
     text-align: center;
     transition: all 0.15s;
@@ -144,14 +145,14 @@ body{
 
 .container1 .card h4{
     font-weight: 600;
-    color: black;
+    color: #D5DF31;
     margin: 0.5rem;
 }
 
 .container1 .card a{
     font-weight: 500;
     text-decoration: none;
-    color: #3498db;
+    color: #fff;
 }
 
 /* CSS Próximos Estrenos Alejandro*/

@@ -149,6 +149,7 @@ a{
     width: 223px;
     height: 430px;
     overflow: hidden;
+    background-color: #043e5a;
     margin: 10px;
     text-align: center;
     transition: all 0.15s;
@@ -174,14 +175,14 @@ div .descripción{
 
 .slick div h4{
     font-weight: 600;
-    color: black;
+    color: #D5DF31;
     margin: 0.5rem;
 }
 
 .slick div a{
     font-weight: 500;
     text-decoration: none;
-    color: #639e6a;
+    color: #fff;
 }
 
 .slick-arrow{
