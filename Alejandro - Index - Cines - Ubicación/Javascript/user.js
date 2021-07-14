@@ -1,34 +1,107 @@
-const nombre = document.getElementById("name")
-const email = document.getElementById("email")
-const pass = document.getElementById("password")
-const form = document.getElementById("form")
-const parrafo = document.getElementById("warnings")
+const auth = firebase.auth()
+const database = firebase.database()
 
-form.addEventListener("submit", e=>{
-    e.preventDefault()
-    let warnings = ""
-    let entrar = false
-    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
-    parrafo.innerHTML = ""
-    if(nombre.value.length <6){
-        warnings += `El usuario es incorrecto <br>`
-        entrar = true
+function register() {
+    email = document.getElementById('email').value
+    password = document.getElementById('password').value
+    full_name = document.getElementById('full_name').value
+    favourite_movie = document.getElementById('favourite_movie').value
+    movies_before_series = document.getElementById('movies_before_series').value
+
+    if (validate_email(email) == false || validate_password(password) == false) {
+        swal('Error', 'Email y/o contraseña incorrectos.', 'error')
+        return
     }
-    if(!regexEmail.test(email.value)){
-        warnings += `El email es incorrecto <br>`
-        entrar = true
-    }
-    if(pass.value.length < 8){
-        warnings += `La contraseña no es válida <br>`
-        entrar = true
+    if (validate_field(full_name) == false || validate_field(favourite_movie) == false || validate_field(movies_before_series) == false) {
+        swal('Error', 'Uno o más campos incorrectos.', 'error')
+        return
     }
 
-    if(entrar){
-        parrafo.innerHTML = warnings
-        swal('Error','Datos faltantes y/o incorrectos.','error')
+    auth.createUserWithEmailAndPassword(email, password)
+        .then(function () {
+            var user = auth.currentUser
 
-    }else{
-        parrafo.innerHTML = "Enviado"
-        swal('¡Felicidades!','Cuenta Creada','success')
+            var database_ref = database.ref()
+
+            var user_data = {
+                email: email,
+                full_name: full_name,
+                favourite_movie: favourite_movie,
+                movies_before_series: movies_before_series,
+                last_login: Date.now()
+            }
+
+            database_ref.child('users/' + user.uid).set(user_data)
+
+            swal('¡Felicidades!', 'Cuenta Creada', 'success')
+        })
+        .catch(function (error) {
+            var error_code = error.code
+            var error_message = error.message
+
+            alert(error_message)
+        })
+}
+
+function login() {
+    email = document.getElementById('email').value
+    password = document.getElementById('password').value
+
+    if (validate_email(email) == false || validate_password(password) == false) {
+        swal('Error', 'Email y/o contraseña incorrectos.', 'error')
+        return
     }
-})
+
+    auth.signInWithEmailAndPassword(email, password)
+        .then(function () {
+            var user = auth.currentUser
+
+            var database_ref = database.ref()
+
+            var user_data = {
+                last_login: Date.now()
+            }
+
+            database_ref.child('users/' + user.uid).update(user_data)
+
+            swal('¡Bienvenido!', 'Iniciaste Sesión', 'success')
+
+        })
+        .catch(function (error) {
+            var error_code = error.code
+            var error_message = error.message
+
+            alert(error_message)
+        })
+}
+
+
+
+function validate_email(email) {
+    expression = /^[^@]+@\w+(\.\w+)+\w$/
+    if (expression.test(email) == true) {
+        return true
+    } else {
+        return false
+    }
+}
+
+function validate_password(password) {
+    if (password < 6) {
+        return false
+    } else {
+        return true
+    }
+}
+
+function validate_field(field) {
+    if (field == null) {
+        return false
+    }
+
+    if (field.length <= 0) {
+        return false
+    } else {
+        return true
+    }
+}
