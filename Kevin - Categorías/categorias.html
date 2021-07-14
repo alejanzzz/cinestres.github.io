@@ -12,6 +12,34 @@
 <body>
 
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBZZZPkNVWljmBBygop18a3XgO8jfjIHiY",
+    authDomain: "cinestreskevin.firebaseapp.com",
+    projectId: "cinestreskevin",
+    storageBucket: "cinestreskevin.appspot.com",
+    messagingSenderId: "379656177345",
+    appId: "1:379656177345:web:6e524f6177e125663c7640",
+    measurementId: "G-793YCLMH3J"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+
+
     <!--Cabecera Alejandro-->
     <header class="header">
         <div class="container separation">
@@ -39,42 +67,37 @@
     <div class="container1">
 
         <div class="card">
-            <img src="./imagenes/peli_1.webp">
-            <h4>Evangelion 3.0 + 1.0</h4>
+            <div id="imagen-one"></div>
             <div class="descripción">
                 <a href="./htmls/peli_1.html">Descripción</a>
             </div>
         </div>
 
         <div class="card">
-            <img src="./imagenes/peli_2.webp">
-            <h4>Way Down</h4>
+            <div id="imagen-two"></div>
             <div class="descripción">
                 <a href="./htmls/peli_2.html">Descripción</a>
             </div>
         </div>
 
         <div class="card">
-            <img src="./imagenes/peli_3.webp">
-            <h4>The King's Man</h4>
+            <div id="imagen-three"></div>
             <div class="descripción">
                 <a href="./htmls/peli_3.html">Descripción</a>
             </div>
         </div>
 
         <div class="card">
-            <img src="./imagenes/peli_5.webp">
-            <h4>A Quiet Place Part II</h4>
+            <div id="imagen-for"></div>
             <div class="descripción">
-                <a href="./htmls/peli_5.html">Descripción</a>
+                <a href="./htmls/peli_4.html">Descripción</a>
             </div>
         </div>
 
         <div class="card">
-            <img src="./imagenes/peli_4.webp">
-            <h4>Boku no Hero Academia</h4>
+            <div id="imagen-five"></div>
             <div class="descripción">
-                <a href="./htmls/peli_4.html">Descripción</a>
+                <a href="./htmls/peli_5.html">Descripción</a>
             </div>
         </div>
     </div>
@@ -89,42 +112,37 @@
     <div class="container1">
 
         <div class="card">
-            <img src="./imagenes/peli_7.webp">
-            <h4>Viuda Negra</h4>
+            <div id="imagen-six"></div>
+            <div class="descripción">
+                <a href="./htmls/peli_6.html">Descripción</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div id="imagen-seven"></div>
             <div class="descripción">
                 <a href="./htmls/peli_7.html">Descripción</a>
             </div>
         </div>
 
         <div class="card">
-            <img src="./imagenes/peli_8.webp">
-            <h4>No Time To Die</h4>
+            <div id="imagen-eight"></div>
             <div class="descripción">
                 <a href="./htmls/peli_8.html">Descripción</a>
             </div>
         </div>
 
         <div class="card">
-            <img src="./imagenes/peli_9.webp">
-            <h4>The Suicide Squad</h4>
+            <div id="imagen-nine"></div>
             <div class="descripción">
                 <a href="./htmls/peli_9.html">Descripción</a>
             </div>
         </div>
 
         <div class="card">
-            <img src="./imagenes/peli_10.webp">
-            <h4>Space Jam</h4>
+            <div id="imagen-ten"></div>
             <div class="descripción">
                 <a href="./htmls/peli_10.html">Descripción</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="./imagenes/peli_11.webp">
-            <h4>Cruella</h4>
-            <div class="descripción">
-                <a href="./htmls/peli_11.html">Descripción</a>
             </div>
         </div>
     </div>
@@ -204,7 +222,9 @@
                 <td><a href="htmls/peli_12.html">Chaos Walking<img src="imagenes/peli_12.webp" alt="Chaos Walking" height="150"></a></td>
             </tr>
         </table> -->
-
+<script src="/Kevin - Categorías/js/categorias.js"></script>
+<!-- <script src="/Kevin - Categorías/js/peli_1.js"></script> -->
+<script src="/Kevin - Categorías/js/categoriasZ.js"></script>
 </body>
 
 </html>
