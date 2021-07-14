@@ -8,7 +8,30 @@
 </head>
 
 <body>
-
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+    
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyBZZZPkNVWljmBBygop18a3XgO8jfjIHiY",
+        authDomain: "cinestreskevin.firebaseapp.com",
+        projectId: "cinestreskevin",
+        storageBucket: "cinestreskevin.appspot.com",
+        messagingSenderId: "379656177345",
+        appId: "1:379656177345:web:6e524f6177e125663c7640",
+        measurementId: "G-793YCLMH3J"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
 
     <!--Cabecera Alejandro-->
     <header class="header">
@@ -35,10 +58,10 @@
     <main>
         <table>
             <caption class="title">
-                <h1>Evangelion 3.0+1.0 (2021)</h1>
+                <h1>Asalto a la Casa de Moneda</h1>
             </caption>
             <th>
-                <img src="../imagenes/peli_1.webp" alt="" height="250">
+                <img src="/Kevin - Categorías/imagenes/peli1.webp" alt="" height="250">
             </th>
             <th>
             <td>
